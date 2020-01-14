@@ -7,8 +7,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
+"jest": {
+  "collectCoverageFrom": [
+      "**/*.js",
+      "!data/keyMap.js",
+      "!/node_modules/",
+  ]
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
