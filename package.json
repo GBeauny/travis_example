@@ -13,7 +13,7 @@
   "collectCoverageFrom": [
       "**/*.js",
       "!data/keyMap.js",
-      "!/node_modules/",
+      "!/node_modules/"
   ]
 },
   "author": "",
